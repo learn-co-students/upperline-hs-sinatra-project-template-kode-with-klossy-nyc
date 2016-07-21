@@ -7,7 +7,7 @@
   </head>
   <body>
     <h2>What news are you interested in?</h2>
-    <form action="/news" method="post">
+    <form action="/newschoice" method="post">
       <input type="radio" name="newschoice" value="wages" checked> wages<br>
       <input type="radio" name="newschoice" value="tech"> tech<br>
       <input type="radio" name="newschoice" value="politics"> politics<br>
@@ -20,11 +20,16 @@
 
 <!-- in application controller:
 
-post '/news' do
+post '/newschoice' do
   @choice = params[:newschoice]
-  @klossy_name = klossify(@user_name)
-  @pig_name = to_pig_latin(@user_name)
-  erb :newspage
+  get_guardian_results(@choice)
+  guardianarticlearray(@guardianresults)
+  @guardianfullarray
+  get_nyt_results(@choice)
+  nytarticlearray(@nytresults)
+  @nytfullarray
+  
+  erb :newsresults
 end
 
 -->
