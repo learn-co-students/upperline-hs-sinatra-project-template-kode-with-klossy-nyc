@@ -12,4 +12,12 @@ class ApplicationController < Sinatra::Base
     erb :mainpage
   end
 
+  post '/quiz' do
+    @type = params[:type]
+    @subject = params [:subject]
+    @dir_indir = params [:dir_indir]
+  end
+
+  end
+
 end
