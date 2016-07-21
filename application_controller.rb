@@ -7,4 +7,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  post '/mainpage' do
+    @name = params[:name]
+    erb :mainpage
+  end
+
 end
