@@ -19,8 +19,8 @@ class ApplicationController < Sinatra::Base
       erb :question2_a
     else
       erb :question2_t
+    end
   end
-end
 
   post '/q2' do
     @subject = params [:subject]
@@ -28,8 +28,8 @@ end
       erb :question3_a
     else
       erb :question3_t
+    end
   end
-end
 
   post '/q3' do
     @dir_indir = params [:dir_indir]
@@ -58,4 +58,16 @@ end
 
   end
 
+  post '/newschoice' do
+    @choice = params[:newschoice]
+    get_guardian_results(@choice)
+    guardianarticlearray(@guardianresults)
+    @guardianfullarray
+    get_nyt_results(@choice)
+    nytarticlearray(@nytresults)
+    @nytfullarray
+
+    erb :newsresults
   end
+  
+end
