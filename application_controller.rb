@@ -41,5 +41,9 @@ class ApplicationController < Sinatra::Base
     erb :culture
   end
 
+  get '/news' do
+    erb :news
+
+  end
 
   end
