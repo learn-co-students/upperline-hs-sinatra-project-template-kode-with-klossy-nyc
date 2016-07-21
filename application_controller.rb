@@ -19,4 +19,17 @@ class ApplicationController < Sinatra::Base
     @dir_indir = params [:dir_indir]
   end
 
+  get '/icons' do
+    erb :icons
+  end
+
+  get '/about' do
+    erb :about
+  end
+
+  get '/culture' do
+    erb :culture
+  end
+
+
   end
