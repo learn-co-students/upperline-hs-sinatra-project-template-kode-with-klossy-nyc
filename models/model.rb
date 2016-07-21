@@ -1,3 +1,56 @@
+require 'httparty'
+
+def get_guardian_results(category)
+  url = "http://content.guardianapis.com/search?q=women%20#{category}&api-key=a136031c-da93-4bea-912a-cfdc669d03c2"
+  response = HTTParty.get(url)
+  @guardianresults = response.parsed_response
+end
+
+def guardianarticlearray(apiresults)
+  @guardianfullarray = []
+  apiresults["response"]["results"].each do |hash|
+    indivarray = []
+    indivarray.push(hash["webTitle"], hash["webPublicationDate"], hash["sectionName"], hash["webUrl"])
+    @guardianfullarray.push(indivarray)
+  end
+  @guardianfullarray
+end
+
+# Built by LucyBot. www.lucybot.com
+def get_nyt_results(category)
+  uri = URI("https://api.nytimes.com/svc/search/v2/articlesearch.json")
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true
+  uri.query = URI.encode_www_form({
+    "api-key" => "de25016a2fcf43ce87fa0fa378c590a9",
+    "q" => "women #{category}"
+  })
+  request = Net::HTTP::Get.new(uri.request_uri)
+  @nytresults = JSON.parse(http.request(request).body)
+  #puts @result.inspect
+end
+
+
+def nytarticlearray(apiresults)
+  @nytfullarray = []
+  apiresults["response"]["docs"].each do |hash|
+    indivarray = []
+    indivarray.push(hash["headline"]["main"], hash["pub_date"], hash["snippet"], hash["web_url"])
+    @nytfullarray.push(indivarray)
+  end
+  @nytfullarray
+end
+
+get_nyt_results("tech")
+nytarticlearray(@nytresults)
+puts @nytfullarray.to_s
+
+get_guardian_results("tech")
+puts @guardianfullarray
+
+
+
+
 # def question_1
 #   puts "Are you more artsy or technical?"
 #   answer_1=gets.chomp
