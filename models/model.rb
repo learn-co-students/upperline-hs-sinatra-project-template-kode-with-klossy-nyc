@@ -96,4 +96,5 @@ def question_1(answer_1)
     question_2a
   elsif answer_1=="technical"
     question_2t
+  end
 end
