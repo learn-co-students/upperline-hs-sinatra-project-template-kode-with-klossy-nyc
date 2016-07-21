@@ -57,6 +57,10 @@
   font-family: 'Muli', sans-serif;
   font-size:150px;
 }
+.font8{
+  font-family: 'Poiret One', cursive;
+  font-size:150px;
+}
 .movetextup{
   position: relative;
   bottom:230px;
