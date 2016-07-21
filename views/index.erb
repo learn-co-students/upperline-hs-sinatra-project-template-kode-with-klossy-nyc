@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Lato:700|Slabo+27px';
+    </style>
+    <style>
+    body {
+      background-image: url("gifts.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    div.transbox {
+      margin: 150px;
+      background-color: #a9a9a9;
+      box-shadow: 10px 10px 0px #dcdcdc;
+      opacity: 0.9
+    }
+
+    div.transbox p {
+      opacity: 1.0
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- <div>
+        <img src="graybackground.png" id="painting">
+      </div> -->
+      <div class="transbox">
+
+        <div class="row">
+          <div class="col-md-2 spacer">
+          </div>
+          <div class="col-md-8 content" id="title">
+           <p>gift guru</p>
+          </div>
+          <div class="col-md-2 spacer">
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- <div class="col-md-2 content">
+            <p><img src="eva-susi.jpg" id="img"></p>
+          </div> -->
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8 content" id="text">
+            <h3>What occasion are you buying a gift for?</h3>
+              <select class="dropdown-menus form-control" name="Occasion">
+                <option value="occasion">Occasion</option>
+                <option value="birthday">Birthday</option>
+                <option value="christmas">Christmas</option>
+                <option value="valentines_day">Valentine's Day</option>
+                <option value="wedding">Wedding</option>
+                <option value="graduation">Graduation</option>
+                <option value="thank_you">Thank You</option>
+              </select><br>
+            <h3>Age of the recipient?</h3>
+              <select class="dropdown-menus form-control" name="Age">
+                <option value="age">Age</option>
+                <option value="infant">Infant</option>
+                <option value="toddler">Toddler</option>
+                <option value="child">Child</option>
+                <option value="tween">Tween</option>
+                <option value="teen">Teen</option>
+                <option value="adult">Adult</option>
+                <option value="elder">Elder</option>
+              </select><br>
+            <h3>Boy or Girl? (optional)<h3>
+              <select class="dropdown-menus form-control" name="Gender">
+                <option value="gender">Gender</option>
+                <option value="girl">Girl</option>
+                <option value="boy">Boy</option>
+                <option value="gender_neutral">Gender Neutral</option>
+              </select><br><br><br>
+          </div>
+          <!-- <div class="col-md-1">
+          </div> -->
+          <div class="col-md-2 content">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
