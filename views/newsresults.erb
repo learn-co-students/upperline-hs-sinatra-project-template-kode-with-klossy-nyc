@@ -5,14 +5,16 @@
     <title>results</title>
   </head>
   <body>
+
+    <%@nytfullarray.each do |article|%>
+    <h1><%=article[0]%></h1>
+    <br>
+    <%end%>
+    
     <%@guardianfullarray.each do |article|%>
 
       <h1><%=article[0]%></h1>
       <br>
     <%end%>
-
-
-    
-    <%=@nytfullarray%>
   </body>
 </html>
