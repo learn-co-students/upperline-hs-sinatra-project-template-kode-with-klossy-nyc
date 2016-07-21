@@ -5,15 +5,22 @@
     <title>results</title>
   </head>
   <body>
-
+    <h2>From the New York Times</h2>
     <%@nytfullarray.each do |article|%>
-    <h1><%=article[0]%></h1>
+    <h1><%=article[0]%></h1><br>
+    <!-- <h3><%=article[1]%></h3><br> -->
+    <h3><%=article[2]%></h3><br>
+    <h3><a href="<%=article[3]%>">See full article.</a></h3><br>
     <br>
     <%end%>
-    
+    <h2>From the Guardian</h2>
     <%@guardianfullarray.each do |article|%>
 
       <h1><%=article[0]%></h1>
+      <!-- <h3><%=article[1]%></h3> -->
+      <h3><%=article[2]%></h3><br>
+      <h3><a href="<%=article[3]%>">See full article.</a></h3><br>
+      <br>
       <br>
     <%end%>
   </body>
