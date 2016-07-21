@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQEBAA0NDQAICAgADg4OAAUFBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+fwAA/n8AAPgfAAD4HwAA/n8AAP5/AAD8PwAA+B8AAPGPAADzzwAA888AAPPPAADxjwAA+B8AAPw/AAD//wAA" rel="icon" type="image/x-icon" />
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
@@ -15,17 +21,17 @@
   </head>
   <body>
     <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <img class="moveimagedownandleft" src="https://image.spreadshirtmedia.com/image-server/v1/designs/12686956,width%3D178,height%3D178.png">
-          </div>
-          <div class="col-md-8">
-            <p class="text-center font movetextdown movethedangtitletothecenter">LadyLike</p>
-          </div>
-          <div class="col-md-2">
-            <img class="moveimagedownandright" src="https://image.spreadshirtmedia.com/image-server/v1/designs/12686956,width%3D178,height%3D178.png">
-          </div>
+      <div class="row">
+        <div class="col-md-2">
+          <center><img class="moveimagedownandleft" src="https://image.spreadshirtmedia.com/image-server/v1/designs/12686956,width%3D178,height%3D178.png">
+        </center></div>
+        <div class="col-md-8">
+          <center><p class="font7 text-center movetextdown">LadyLike</p></center>
         </div>
+        <div class="col-md-2">
+          <center><img class="moveimagedownandright" src="https://image.spreadshirtmedia.com/image-server/v1/designs/12686956,width%3D178,height%3D178.png">
+        </center></div>
+      </div>
         <hr class=hr>
         <div class="row">
           <div class="col-md-3">
@@ -51,7 +57,7 @@
           <div class="col-md-2">
           </div>
           <div class="col-md-8">
-            <p class="text-center font2 movetextdown3">Hello, <%=@name%>! Welcome to LadyLike!</p>
+            <p class="text-center font2 movetextdown3">Hello, <%=@name.capitalize%>!<br> Welcome to <i>LadyLike</i>!</p>
           </div>
           <div class="col-md-2">
           </div>
