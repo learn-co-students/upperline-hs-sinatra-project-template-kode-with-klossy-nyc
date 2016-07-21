@@ -2,9 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>TAMZ Travel</title>
   </head>
   <body>
-
+    <% @city params[:location] %>
+    <% {:location => paris} %>
+    <h1>Successfully reached TAMZ Travel.</h1>
+    <a href="/new_york_city">New York City</a>
+    <form action="/process" method="post">
+      <label for="nickname">What's your nickname?</label>
+      <input type="text" name="nickname">
+      <input type="submit" value="Sumbit">
+      <input type="submit" value="Sumbit">
+    </form>
   </body>
 </html>
