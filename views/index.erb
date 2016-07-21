@@ -3,24 +3,75 @@
   <head>
     <meta charset="utf-8">
     <title>Let's Eat NYC</title>
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- button -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- button -->
   </head>
   <body>
+    <div class="container">
+      <div class="row" id="space"></div>
+        <div class="row">
+          <div class="col-md-1 spacer"></div>
+          <div class="col-md-10 title">
+            LET'S EAT NYC!
+          </div>
+          <div class="col-md-1 spacer"></div>
+        </div>
+
+      <div class="row" id="space"></div>
+        <h3 class="question">WHERE WILL YOU BE EATING?</h3>
+        <div class="row" id="space"></div>
+          <button type="button" class="button" data-toggle="collapse" data-target="#lowerman">Lower Manhattan</button>
+  <div id="lowerman" class="collapse">
     <div class="row">
-      <div class="col-md-1 spacer">
-      </div>
-      <div class="col-md-10 title">
-        Let's Eat NYC!
-      </div>
-      <div class="col-md-1 spacer">
-      </div>
+      <div class="col-lg-1 spacer"></div>
+      <form action="/choice" method="post">
+        <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Lower East Side"></a>
+        <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="SoHo"></a>
+        <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Tribeca"></a>
+      </form>
+    </div>
+  </div>
+
+        <div class="row" id="bigspace"></div>
+          <button type="button" class="button" data-toggle="collapse" data-target="#centralman">Central Manhattan</button>
+<div id="centralman" class="collapse">
+  <div class="row">
+    <div class="col-lg-1 spacer"></div>
+    <form action="/choice" method="post">
+      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Chelsea"></a>
+      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Korea Town"></a>
+      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Hell's Kitchen"></a>
+    </form>
+  </div>
+</div>
+
+        <div class="row" id="bigspace"></div>
+          <button type="button" class="button" data-toggle="collapse" data-target="#upperman">Upper Manhattan</button>
+<div id="upperman" class="collapse">
+  <div class="row">
+    <div class="col-lg-1 spacer"></div>
+    <form action="/choice" method="post">
+      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Upper West Side"></a>
+      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Upper East Side"></a>
+      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="East Harlem"></a>
+    </form>
+  </div>
+</div>
+
+    <!-- <button type="button" class="btn secbutton">Lower East Side</button>
+    <button type="button" class="btn secbutton">Tribeca</button>
+    <button type="button" class="btn secbutton">SoHo</button> -->
+    </div> <!--close container-->
   </body>
 </html>
