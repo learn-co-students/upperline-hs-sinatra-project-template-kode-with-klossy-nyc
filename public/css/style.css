@@ -14,3 +14,9 @@
   position: relative;
   top: 50px;
 }
+.hr{
+  border:none;
+  height:5px;
+  color:gray;
+  background-color: gray;
+}
