@@ -13,25 +13,37 @@ class ApplicationController < Sinatra::Base
     erb :mainpage
   end
 
-  # post '/q1' do
-  #   @type = params[:type]
-  #   erb :question_1
-  # end
+  post '/q1' do
+    @type = params[:type]
+    if @type=="Artsy"
+      erb :question2_a
+    else
+      erb :question2_t
+  end
+end
 
   post '/q2' do
     @subject = params [:subject]
-    erb :question_2a
+    if @subject=="English"
+      erb :question3_a
+    else
+      erb :question3_t
   end
+end
 
   post '/q3' do
     @dir_indir = params [:dir_indir]
-    erb :question_3a
+    if @dir_indir=="Direct"
+    erb :question3_a
   end
 
   get '/icons' do
     @type = params[:type]
     erb :question1
+
   end
+
+
 
   get '/about' do
     erb :about
