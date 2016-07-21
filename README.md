@@ -1,6 +1,6 @@
 
 
-##Sinatra Template
+##Sinatra Template for feminist
 
 Fork and clone this repository to use as a template for your project.
 
