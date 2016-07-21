@@ -7,6 +7,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
 }
+
 .movetextdown {
   position: relative;
   top: 25px;
@@ -29,7 +30,7 @@
 .moveimagedownandright{
   position: relative;
   top:50px;
-  left:75px;
+  left:25px;
 }
 
 .movetextdown3 {
@@ -46,7 +47,15 @@
 }
 .font5{
   font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+.font6{
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
+}
+.font7{
+  font-family: 'Muli', sans-serif;
+  font-size:150px;
 }
 .movetextup{
   position: relative;
@@ -55,4 +64,25 @@
 .moveimageup{
   position: relative;
   bottom:250px;
+}
+body {
+  background-image: url(http://65.media.tumblr.com/2387017f607b2653291648161a373450/tumblr_mfj20r62w41rirnzso1_400.jpg)
+}
+a:link {
+    color: #AB0D4C;
+}
+
+/* visited link */
+a:visited {
+    color: #69082F;
+}
+
+/* mouse over link */
+a:hover {
+    color: #DF1466;
+}
+
+/* selected link */
+a:active {
+    color: #922B54;
 }
