@@ -1,0 +1,47 @@
+@font-face {
+  font-family: selima;
+  src: url("MacOSX/Users/gazelle/Desktop/Selima-Script.otf") format("opentype");
+}
+
+
+#title {
+  font-family: selima;
+  font-size: 80px;
+  text-align: center;
+  margin-top: .7em;
+  opacity: 1;
+}
+
+.form-control {
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: .0625rem solid #ccc;
+    border-radius: .25rem;
+
+
+#text {
+  font-family: 'Slabo 27px', serif;
+  opacity: 1;
+  text-align: center;
+  font-size: 27px
+}
+
+
+.frame {
+    height: 400px;      /* equals max image height */
+    /*width: 280px;*/
+    white-space: nowrap;
+
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
