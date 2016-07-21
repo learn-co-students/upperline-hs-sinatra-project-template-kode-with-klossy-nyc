@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+		<meta charset="UTF-8">
+    <title>
+      T.A.M.Z Travel Guides
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap_the_wrapper2" style="height: 500px;">
+      <div class="wrapper2">
+        <header>
+          <h1>T.A.M.Z Travel</h1>
+          <h3>Where are you?</h3>
+        </header>
+        <form method="POST" action="/location">
+          <select class="dropdown-menus form-control" name="Location">
+            <option value="Location">Location</option>
+            <option value="New York City, New York, USA">New York City, New York, USA</option>
+            <option value="Los Angeles, California, USA">Los Angeles, California, USA</option>
+            <option value="Paris, France">Paris, France</option>
+            <option value="London, England">London, England</option>
+          </select>
+
+          <h3> Which season are you visiting in? </h3>
+
+          <select class="dropdown-menus form-control" name="season">
+            <option value="Season">Season</option>
+            <option value="Summer">Summer</option>
+            <option value="Autumn">Autumn</option>
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+          </select>
+
+        <br>
+        <br>
+
+        <div>
+          <input id="final-button-stuff" class="btn btn-primary" type="submit" value="Submit">
+        </div>
+      </form>
+      </div>
+    </div>
+  </body>
+
+</html>

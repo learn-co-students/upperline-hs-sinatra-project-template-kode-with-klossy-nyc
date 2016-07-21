@@ -1,0 +1,12 @@
+body {
+    background-image: url("/images/airplane.jpg");
+    background-repeat: repeat-y;
+  }
+  /*
+  background-color: red
+}
+
+#airplane{
+  height: 340px
+  width: 100%
+}
