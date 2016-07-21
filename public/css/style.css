@@ -1,6 +1,7 @@
 body {
-    background-image: url("/images/airplane.jpg");
-    background-repeat: repeat-y;
+    background-image: url("/images/joy.jpg");
+
+    background-size: cover;
   }
   /*
   background-color: red
