@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
     @dir_indir = params [:dir_indir]
     if @dir_indir=="Direct"
     erb :question3_a
+    end
   end
 
   get '/icons' do
@@ -69,5 +70,5 @@ class ApplicationController < Sinatra::Base
 
     erb :newsresults
   end
-  
+
 end
