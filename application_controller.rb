@@ -8,11 +8,16 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
+  # get '/location' do
+  #   erb :location
+  # end
+
 
   post "/location" do
     @location = params[:location]
+    puts @location
     @packing_list = packing_list(@location)
-    erb :results
+    erb :location
   end
 
 end

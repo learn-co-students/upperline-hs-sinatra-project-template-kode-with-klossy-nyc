@@ -1,7 +1,7 @@
 def packing_list(location)
   if location=="NYC"
-  return ["nyc_1" ,"nyc_2", "nyc_3","nyc_4","nyc_5"]
-
+  # return ["comfortable walking shoes" ,"fashionable clothing", "nyc_3","nyc_4","nyc_5"]
+"comfortable walking shoes"
   elsif location=="Paris"
     return ["paris_1","paris_2","paris_3","paris_4", "paris_5"]
   end
