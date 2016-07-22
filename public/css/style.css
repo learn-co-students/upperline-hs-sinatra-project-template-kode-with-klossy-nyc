@@ -1,0 +1,33 @@
+.Website-title {
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.headerspacer {
+  margin-top: 20px;
+}
+
+.explaination {
+  font-size: 30px
+  font-family: sans-serif;
+}
+
+.titlefont {
+  font-size: 1000px
+  font-family: impact;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+
+
+.p {
+  text-indent: 1000px;
+}
+
+body {
+    background-color: black;
+}
