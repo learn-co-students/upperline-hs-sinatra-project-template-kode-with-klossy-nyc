@@ -15,6 +15,18 @@ def packing_list(location, season)
     "<li>clothing appropriate for weather</li><li>undergarments</li><li>light jacket</li><li>camera</li><li>toiletries</li>"
   elsif location=="Paris" && season=="spring"
     "<li>comfortable walking shoes</li><li>jeans</li><li>undergarments</li><li>outlet converters</li><li>toiletries</li><li>light jacket</li>"
+elsif location=="LA" && season=="summer"
+  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>swimsuit</li><li>toiletries</li><li>sun dress</li>"
+elsif location=="LA" && season=="winter"
+  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>light jacket</li><li>toiletries</li><li>jeans</li>"
+elsif location=="LA" && season=="spring"
+  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>swimsuit</li><li>toiletries</li>"
+elsif location=="LA" && season=="autumn"
+  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>dress</li><li>toiletries</li>"
+
+
+
+
   end
 end
 
@@ -23,6 +35,8 @@ def travel_tips(location)
     "<li>Go to the TIX stand in Times Square for best Broadway ticket prices</li><li>Check out free events/activities around the city by downloading the “Pulsd” application on your smart phone</li><li>If a student, remember to bring your ID for student discount opportunities for shopping and attractions</li>"
   elsif location=="Paris"
     "<li>Instead of the Eiffel Tower for great views, go to the Arc de Triumph at night to see the city illuminated</li><li>Don’t keep your wallet, phone or valuables in your pocket in caution of pickpockets</li><li>Exchange your money before arrival into the country</li>"
+  elsif location=="LA"
+      "<li>Be street smart</li><li>Carry water with you.</li><li>Adventure out of your comfort zone</li>"
   end
 end
 
@@ -31,6 +45,8 @@ def weather(location)
     "<li>Winter:36-48 F</li><li>Spring:39-61 F</li><li>Summer:72-75 F</li><li>Fall:68-48 F</li>"
   elsif location=="Paris"
     "<li>Winter:45-47 F</li><li>Spring:55-68 F</li><li>Summer:74-78 F</li><li>Fall:51-71 F</li>"
+  elsif location=="LA"
+  "<li>Winter:48-68 F</li><li>Spring:60-80 F</li><li>Summer:66-85 F</li><li>Fall:60-75 F</li>"
   end
 end
 #  puts city("new_york_city")
