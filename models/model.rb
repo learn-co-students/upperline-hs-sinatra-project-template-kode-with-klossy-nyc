@@ -1,16 +1,28 @@
 def packing_list(location, season)
-  if location=="NYC"&&season=="Summer"
-    "clothing appropriate for weather, undergarments, sunglasses, camera, toiletries"
-  elsif location=="Paris"&&season=="Summer"
-    "comfortable walking shoes, fashionable clothes, undergarments, outlet converters, toiletries"
+  if location=="NYC" && season=="summer"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>camera</li><li>toiletries</li>"
+  elsif location=="Paris" && season=="summer"
+    "<li>comfortable walking shoes</li><li>fashionable clothes</li><li>undergarments</li><li>outlet converters</li><li>toiletries</li>"
+  elsif location=="NYC" && season=="winter"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>scarf</li><li>camera</li><li>toiletries</li>"
+  elsif location=="Paris" && season=="winter"
+    "<li>comfortable walking shoes</li><li>warm clothes</li><li>undergarments</li><li>outlet converters</li><li>toiletries</li><li>coat</li>"
+  elsif location=="NYC" && season=="autumn"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>sweater</li><li>camera</li><li>toiletries</li>"
+  elsif location=="Paris" && season=="autumn"
+    "<li>comfortable walking shoes</li><li>jeans</li><li>undergarments</li><li>outlet converters</li><li>toiletries</li><li>sweater</li>"
+  elsif location=="NYC" && season=="spring"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>light jacket</li><li>camera</li><li>toiletries</li>"
+  elsif location=="Paris" && season=="spring"
+    "<li>comfortable walking shoes</li><li>jeans</li><li>undergarments</li><li>outlet converters</li><li>toiletries</li><li>light jacket</li>"
   end
 end
 
 def travel_tips(location)
   if location=="NYC"
-    "Go to the TIX stand in Times Square for best Broadway ticket prices. Check out free events/activities around the city by downloading the “Pulsd” application on your smart phone. If a student, remember to bring your ID for student discount opportunities for shopping and attractions"
+    "<li>Go to the TIX stand in Times Square for best Broadway ticket prices</li><li>Check out free events/activities around the city by downloading the “Pulsd” application on your smart phone</li><li>If a student, remember to bring your ID for student discount opportunities for shopping and attractions</li>"
   elsif location=="Paris"
-    "Instead of the Eiffel Tower for great views, go to the Arc de Triumph at night to see the city illuminated. Don’t keep your wallet, phone or valuables in your pocket in caution of pickpockets. Exchange your money before arrival into the country"
+    "<li>Instead of the Eiffel Tower for great views, go to the Arc de Triumph at night to see the city illuminated</li><li>Don’t keep your wallet, phone or valuables in your pocket in caution of pickpockets</li><li>Exchange your money before arrival into the country</li>"
   end
 end
 

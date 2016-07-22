@@ -16,11 +16,13 @@ class ApplicationController < Sinatra::Base
   post "/location" do
     @location = params[:location]
     puts @location
-    @packing_list = packing_list(@location)
+    @season = params[:season]
+    puts @season
+    @packing_list = packing_list(@location, @season)
+    puts @packing_list
     @travel_tips = travel_tips(@location)
     @weather = weather(@location)
     erb :location
-    erb :season
   end
 
 end
