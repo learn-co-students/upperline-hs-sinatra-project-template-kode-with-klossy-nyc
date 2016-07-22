@@ -18,14 +18,14 @@ class ApplicationController < Sinatra::Base
 
   post '/choice' do
     @area = params[:neighborhood]
-    @type = params[:type]
-    erb :results
+    erb :index2
   end
 
   post '/results' do
     @type = params[:type]
+    @area = params[:neighborhood]
     puts @area
-    puts @area.class
+    puts @type
     @recommendation = recommend(@area, @type)
     erb :results
   end

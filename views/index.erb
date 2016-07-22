@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Let's Eat NYC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#neighborhood_return a").click(function(){
+          var value = $(this).html();
+          var input = $('#neighborhood');
+          input.val(value);
+        });
+      });
+    </script>
       <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -34,12 +44,13 @@
           <button type="button" class="button" data-toggle="collapse" data-target="#lowerman">Lower Manhattan</button>
   <div id="lowerman" class="collapse">
     <div class="row">
-      <div class="col-lg-1 spacer"></div>
       <form action="/choice" method="post">
-        <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Lower East Side"></a>
-        <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="SoHo"></a>
-        <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Tribeca"></a>
-      </form>
+        <input type="text" class="hide" id="neighborhood" name="neighborhood">
+        <div id="neighborhood_return">
+          <a href="#" class ="secbutton">Lower East Side</a>
+          <a href="#" class ="secbutton">SoHo</a>
+          <a href="#" class ="secbutton">Tribeca</a>
+        </div>
     </div>
   </div>
 
@@ -47,12 +58,13 @@
           <button type="button" class="button" data-toggle="collapse" data-target="#centralman">Central Manhattan</button>
 <div id="centralman" class="collapse">
   <div class="row">
-    <div class="col-lg-1 spacer"></div>
-    <form action="/choice" method="post">
-      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Chelsea"></a>
-      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Korea Town"></a>
-      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Hell's Kitchen"></a>
-    </form>
+    <!-- <div class="col-lg-1 spacer"></div> -->
+    <!-- <form action="/choice" method="post"> -->
+      <div id="neighborhood_return">
+        <a href="#" class ="secbutton">Chelsea</a>
+        <a href="#" class ="secbutton">Korea Town</a>
+        <a href="#" class ="secbutton">Hell's Kitchen</a>
+      </div>
   </div>
 </div>
 
@@ -60,13 +72,20 @@
           <button type="button" class="button" data-toggle="collapse" data-target="#upperman">Upper Manhattan</button>
 <div id="upperman" class="collapse">
   <div class="row">
-    <div class="col-lg-1 spacer"></div>
-    <form action="/choice" method="post">
-      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Upper West Side"></a>
-      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="Upper East Side"></a>
-      <a href="/q2"><input class ="secbutton" type="button" name ="neighborhood" value="East Harlem"></a>
+    <!-- <div class="col-lg-1 spacer"></div> -->
+    <!-- <form action="/choice" method="post"> -->
+        <div id="neighborhood_return">
+          <a href="#" class ="secbutton">Upper West Side</a>
+          <a href="#" class ="secbutton">Upper East Side</a>
+          <a href="#" class ="secbutton">East Harlem</a>
+        </div>
+      </div>
+    </div>
+      <!-- <input class ="secbutton" type="button" name ="neighborhood" value="Upper West Side">
+      <a href="#"><input class ="secbutton" type="button" name ="neighborhood" value="Upper East Side"></a>
+      <a href="#"><input class ="secbutton" type="button" name ="neighborhood" value="East Harlem"></a> -->
+      <input class="secbutton" type="submit">
     </form>
-  </div>
 </div>
 
     <!-- <button type="button" class="btn secbutton">Lower East Side</button>
