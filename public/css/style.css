@@ -1,0 +1,82 @@
+body {
+  background-image: url("http://49.media.tumblr.com/667aae89736c77b8d7420f874f04a9b8/tumblr_o5bmkjS7LN1tfav9mo1_500.gif");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hide{
+  visibility: hidden;
+}
+.container{
+  text-align: center;
+}
+#space{
+  height: 25px;
+}
+#bigspace{
+  height: 80px;
+}
+
+.pic{
+  width: 50%;
+  height: 50%;
+}
+
+.bigpic{
+  width: 65%;
+  height: 65%;
+}
+
+.title {
+  font-size: 50px;
+  font-family: Verdana;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.question {
+    font-size: 20px;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgba(22, 18, 22, 0.45);
+    border: none;
+    color: white;
+    padding: 15px 95px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-size: 17px;
+    margin: auto;
+    cursor: pointer;
+}
+.secbutton {
+    background-color: rgba(35, 25, 30, 0.57);
+    border: none;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 40px;
+    cursor: pointer;
+    transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.secbutton:hover,
+.secbutton:active {
+  background-color: rgba(59,134,134, 0.8);
+  border-color: #9363c4;
+  color: #fff;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Let's Eat NYC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#type_return a").click(function(){
+          var value = $(this).html();
+          var input = $('#type');
+          input.val(value);
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- button -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- button -->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row" id="space"></div>
+        <div class="row">
+          <div class="col-md-1 spacer"></div>
+          <div class="col-md-10 title">
+            LET'S EAT NYC!
+          </div>
+          <div class="col-md-1 spacer"></div>
+        </div>
+
+      <div class="row" id="space"></div>
+        <h3 class="question">WHAT WILL YOU BE EATING?</h3>
+        <div class="row" id="bigspace"></div>
+    <div class="row">
+      </div>
+      <div class="col-md-3">
+        <a href="/results"><img src="https://65.media.tumblr.com/9b7d8861d8d4bc98ee2136ef3d4bb4e0/tumblr_inline_neeb3oM1Y41sc17cx.gif" class="pic"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="/results"><img src="http://67.media.tumblr.com/ee5f7912b325a3bb88649480bfa5296c/tumblr_mmxhx0CUi81rfjowdo1_500.gif" class="bigpic"></a>
+      </div>
+      <div class="col-sm-3">
+        <img src="http://37.media.tumblr.com/f879437f86d4f53d019808fe0e9c2a41/tumblr_n5xsfsosGa1snc5kxo1_500.gif" class="pic"></a>
+      </div>
+      <div class="col-md-3">
+        <img src="https://media.giphy.com/media/ILTBV9zZob9te/giphy.gif" class="pic">
+      </div>
+
+      <div class="row">
+        <!-- <div class="col-md-1 spacer"> -->
+</div>
+        <form action="/results" method="post">
+          <input type="hidden" name="neighborhood" value=<%=@area%>>
+          <input type="text" class="hide" id="type" name="type">
+            <div id="type_return">
+              <a href="#" class ="secbutton">Breakfast</a>
+              <a href="#" class ="secbutton">Lunch</a>
+              <a href="#" class ="secbutton">Dinner</a>
+              <a href="#" class ="secbutton">Dessert</a>
+          </div>
+        </div>
+          <input class="secbutton" type="submit">
+        </form>
+    </div>
+</div>
+      </div>
+    </div>
+  </body>
+</html>
