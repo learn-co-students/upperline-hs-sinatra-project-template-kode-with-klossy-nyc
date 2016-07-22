@@ -17,9 +17,9 @@ end
 
 def weather(location)
   if location=="NYC"
-    "Winter:36-48 F, Spring:39-61 F, Summer:72-75 F, Fall:68-48 F"
+    "<li>Winter:36-48 F</li><li>Spring:39-61 F</li><li>Summer:72-75 F</li><li>Fall:68-48 F</li>"
   elsif location=="Paris"
-    "Winter:45-47 F, Spring:55-68 F, Summer:74-78 F, Fall:51-71 F"
+    "<li>Winter:45-47 F</li><li>Spring:55-68 F</li><li>Summer:74-78 F</li><li>Fall:51-71 F</li>"
   end
 end
 #  puts city("new_york_city")
