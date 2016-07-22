@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your Feminist Icon </title>
+  </head>
+  <body>
+  <% if @final_results == "indirect_artsy" %>
+      <% @indir_art.each do |person| %>
+      <div>
+        <div href="<%=person[2]%>"><%=person[0]%></div>
+        <img src="<%=person[1]%>">
+        <div><%=person[3]%></div>
+      </div>
+      <%end%>
+    <% elsif @final_results == "direct_artsy" %>
+        <% @dir_art.each do |person| %>
+        <div>
+          <div href="<%=person[2]%>"><%=person[0]%></div>
+          <img src="<%=person[1]%>">
+          <div><%=person[3]%></div>
+        </div>
+        <%end%>
+    <% elsif @final_results == "indirect_tech" %>
+        <% @indir_tech.each do |person| %>
+        <div>
+          <div href="<%=person[2]%>"><%=person[0]%></div>
+          <img src="<%=person[1]%>">
+          <div><%=person[3]%></div>
+        </div>
+        <%end%>
+
+    <% elsif @final_results == "direct_tech" %>
+      <% @dir_tech.each do |person| %>
+      <div>
+          <div href="<%=person[2]%>"><%=person[0]%></div>
+          <img src="<%=person[1]%>">
+          <div><%=person[3]%></div>
+        </div>
+      <%end%>
+   <%end%>
+  </body>
+</html>
