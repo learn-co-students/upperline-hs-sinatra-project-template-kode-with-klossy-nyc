@@ -17,6 +17,8 @@ class ApplicationController < Sinatra::Base
     @location = params[:location]
     puts @location
     @packing_list = packing_list(@location)
+    @travel_tips = travel_tips(@location)
+    @weather = weather(@location)
     erb :location
   end
 

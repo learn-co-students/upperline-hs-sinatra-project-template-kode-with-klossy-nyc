@@ -1,9 +1,25 @@
 def packing_list(location)
   if location=="NYC"
   # return ["comfortable walking shoes" ,"fashionable clothing", "nyc_3","nyc_4","nyc_5"]
-"comfortable walking shoes"
+    "clothing appropriate for weather, undergarments, sunglasses, camera, toiletries"
   elsif location=="Paris"
-    return ["paris_1","paris_2","paris_3","paris_4", "paris_5"]
+    "comfortable walking shoes, fashionable clothes, undergarments, outlet converters, toiletries"
+  end
+end
+
+def travel_tips(location)
+  if location=="NYC"
+    "Go to the TIX stand in Times Square for best Broadway ticket prices. Check out free events/activities around the city by downloading the “Pulsd” application on your smart phone. If a student, remember to bring your ID for student discount opportunities for shopping and attractions"
+  elsif location=="Paris"
+    "Instead of the Eiffel Tower for great views, go to the Arc de Triumph at night to see the city illuminated. Don’t keep your wallet, phone or valuables in your pocket in caution of pickpockets. Exchange your money before arrival into the country"
+  end
+end
+
+def weather(location)
+  if location=="NYC"
+    "Winter:36-48 F, Spring:39-61 F, Summer:72-75 F, Fall:68-48 F"
+  elsif location=="Paris"
+    "Winter:45-47 F, Spring:55-68 F, Summer:74-78 F, Fall:51-71 F"
   end
 end
 #  puts city("new_york_city")
