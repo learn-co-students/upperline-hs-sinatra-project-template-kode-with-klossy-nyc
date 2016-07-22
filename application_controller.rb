@@ -12,7 +12,6 @@ class ApplicationController < Sinatra::Base
   #   erb :location
   # end
 
-
   post "/location" do
     @location = params[:location]
     puts @location

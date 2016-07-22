@@ -15,18 +15,14 @@ def packing_list(location, season)
     "<li>clothing appropriate for weather</li><li>undergarments</li><li>light jacket</li><li>camera</li><li>toiletries</li>"
   elsif location=="Paris" && season=="spring"
     "<li>comfortable walking shoes</li><li>jeans</li><li>undergarments</li><li>outlet converters</li><li>toiletries</li><li>light jacket</li>"
-elsif location=="LA" && season=="summer"
-  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>swimsuit</li><li>toiletries</li><li>sun dress</li>"
-elsif location=="LA" && season=="winter"
-  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>light jacket</li><li>toiletries</li><li>jeans</li>"
-elsif location=="LA" && season=="spring"
-  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>swimsuit</li><li>toiletries</li>"
-elsif location=="LA" && season=="autumn"
-  "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>dress</li><li>toiletries</li>"
-
-
-
-
+  elsif location=="LA" && season=="summer"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>swimsuit</li><li>toiletries</li><li>sun dress</li>"
+  elsif location=="LA" && season=="winter"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>light jacket</li><li>toiletries</li><li>jeans</li>"
+  elsif location=="LA" && season=="spring"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>swimsuit</li><li>toiletries</li>"
+  elsif location=="LA" && season=="autumn"
+    "<li>clothing appropriate for weather</li><li>undergarments</li><li>sunglasses</li><li>dress</li><li>toiletries</li>"
   end
 end
 
