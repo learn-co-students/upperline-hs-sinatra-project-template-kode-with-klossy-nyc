@@ -39,7 +39,7 @@
 }
 .font3{
   font-family: 'Raleway', sans-serif;
-  font-size: 75px;
+  font-size: 55px;
 }
 .font4{
   font-family: 'Raleway', sans-serif;
@@ -48,7 +48,6 @@
 .font5{
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
-  color: black;
 }
 .font6{
   font-family: 'Poppins', sans-serif;
@@ -76,11 +75,23 @@
   font-size: 50px;
   color: black;
 }
+.card-panel1{
+  background-color: #F4D7E8;
+}
+.card-panel2{
+  background-color:#FBC2E3;
+}
 body {
   background-image: url(http://65.media.tumblr.com/2387017f607b2653291648161a373450/tumblr_mfj20r62w41rirnzso1_400.jpg)
 }
 label {
   color:black;
+}
+.formback {
+  background-color: lightpink;
+}
+.back {
+  background-color: lightgray;
 }
 a:link {
     color: #AB0D4C;
