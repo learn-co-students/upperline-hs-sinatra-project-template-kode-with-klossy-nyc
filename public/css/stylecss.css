@@ -1,5 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
 body {
     background-image: url("/images/Circles.jpg");
     background-size: cover;
-    font-family: Times;
+    font-family: 'Amatic SC', cursive;
+    color: white;
   }
+
+option {
+
+  font-size: 100px;
+}
+
+select {
+  height: 200px;
+}
+
+h1 {
+  font-size: 70px;
+}
