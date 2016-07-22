@@ -1,6 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 body {
-    background-image: url("/images/Circles.jpg");
-    background-size: cover;
+    background-image: url("/images/golddots.jpg");
+    background-size: repeat;
     font-family: 'Amatic SC', cursive;
-    color: white;
+    color: black;
   }
