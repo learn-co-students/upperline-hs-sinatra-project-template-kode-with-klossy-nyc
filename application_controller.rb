@@ -20,6 +20,7 @@ class ApplicationController < Sinatra::Base
     @travel_tips = travel_tips(@location)
     @weather = weather(@location)
     erb :location
+    erb :season
   end
 
 end

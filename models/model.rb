@@ -1,8 +1,7 @@
-def packing_list(location)
-  if location=="NYC"
-  # return ["comfortable walking shoes" ,"fashionable clothing", "nyc_3","nyc_4","nyc_5"]
+def packing_list(location, season)
+  if location=="NYC"&&season=="Summer"
     "clothing appropriate for weather, undergarments, sunglasses, camera, toiletries"
-  elsif location=="Paris"
+  elsif location=="Paris"&&season=="Summer"
     "comfortable walking shoes, fashionable clothes, undergarments, outlet converters, toiletries"
   end
 end
