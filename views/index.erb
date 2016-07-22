@@ -12,11 +12,16 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" href="script.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
 
 
 
@@ -40,10 +45,14 @@
       <div class="col-md-2">
       </div>
       <div class="col-md-8">
+        <p class="font5 text-center">Hello! Welcome to <i>LadyLike</i>, where we're redefining what it means to be a lady.</p>
         <form action="/mainpage" class="font5 text-center" method="post">
-          <label for="name">Hello! Welcome to <i>LadyLike</i>, where we're redefining what it means to be a lady.<br>What's your name?</label>
-          <input type="text" name="name"><br><br>
-          <input type="submit" value="Click to continue to the website!">
+          <label for="name">What's your name?</label>
+          <input type="text" name="name"><br>
+          <button class="btn waves-effect waves-light black" type="submit" name="action">Continue
+            <i class="material-icons right">play_arrow</i>
+          </button>
+          <!-- <a class="waves-effect waves-light btn" type="submit"><i class="material-icons right">play_arrow</i>continue</a> -->
         </form>
       </div>
       <div class="col-md-2">
