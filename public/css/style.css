@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.font{
+  font-family: 'Raleway', sans-serif;;
+  font-size: 200px;
+}
+.font2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+}
+.movetextdown {
+  position: relative;
+  top: 25px;
+}
+.movetextdown2 {
+  position: relative;
+  top: 50px;
+}
+.hr{
+  border:none;
+  height:5px;
+  color:gray;
+  background-color: gray;
+}
+.moveimagedownandleft {
+  position: relative;
+  top:50px;
+  right:25px;
+}
+.moveimagedownandright{
+  position: relative;
+  top:50px;
+  left:75px;
+}
+
+.movetextdown3 {
+  position: relative;
+  top: 100px;
+}
+.font3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+}
+.font4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+.font5{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.movetextup{
+  position: relative;
+  bottom:230px;
+}
+.moveimageup{
+  position: relative;
+  bottom:250px;
+}

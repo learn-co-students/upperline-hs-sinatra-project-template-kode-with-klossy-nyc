@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+  </head>
+  <body>
+    <h2>What news are you interested in?</h2>
+    <form action="/newschoice" method="post">
+      <input type="radio" name="newschoice" value="wages" checked> wages<br>
+      <input type="radio" name="newschoice" value="tech"> tech<br>
+      <input type="radio" name="newschoice" value="politics"> politics<br>
+      <input type="radio" name="newschoice" value="global"> global<br><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
+
+
+<!-- in application controller:
+
+post '/newschoice' do
+  @choice = params[:newschoice]
+  get_guardian_results(@choice)
+  guardianarticlearray(@guardianresults)
+  @guardianfullarray
+  get_nyt_results(@choice)
+  nytarticlearray(@nytresults)
+  @nytfullarray
+  
+  erb :newsresults
+end
+
+-->
