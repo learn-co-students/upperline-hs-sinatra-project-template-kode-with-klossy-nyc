@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.font{
+  font-family: 'Raleway', sans-serif;;
+  font-size: 200px;
+}
+.font2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+}
+
+.movetextdown {
+  position: relative;
+  top: 25px;
+}
+.movetextdown2 {
+  position: relative;
+  top: 50px;
+}
+.hr{
+  border:none;
+  height:5px;
+  color:gray;
+  background-color: gray;
+}
+.moveimagedownandleft {
+  position: relative;
+  top:50px;
+  right:25px;
+}
+.moveimagedownandright{
+  position: relative;
+  top:50px;
+  left:25px;
+}
+
+.movetextdown3 {
+  position: relative;
+  top: 100px;
+}
+.font3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 55px;
+}
+.font4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+.font5{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+.font6{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.font7{
+  font-family: 'Muli', sans-serif;
+  font-size:150px;
+}
+.font8{
+  font-family: 'Poiret One', cursive;
+  font-size:150px;
+}
+.movetextup{
+  position: relative;
+  bottom:230px;
+}
+.moveimageup{
+  position: relative;
+  bottom:250px;
+}
+
+.input-field{
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  color: black;
+}
+.card-panel1{
+  background-color: #F4D7E8;
+}
+.card-panel2{
+  background-color:#FBC2E3;
+}
+/*body {
+  background-image: url(http://65.media.tumblr.com/2387017f607b2653291648161a373450/tumblr_mfj20r62w41rirnzso1_400.jpg)
+}*/
+label {
+  color:black;
+}
+.formback {
+  background-color: lightpink;
+}
+.back {
+  background-color: lightgray;
+}
+a:link {
+    color: #AB0D4C;
+}
+
+/* visited link */
+a:visited {
+    color: #69082F;
+}
+
+/* mouse over link */
+a:hover {
+    color: #DF1466;
+}
+
+/* selected link */
+a:active {
+    color: #922B54;
+}
+
+/* label color */
+   .input-field label {
+     color: #fff;
+     font-size: 1.2em;
+     white-space: nowrap;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #fff;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1px 0 0 #fff;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1px 0 0 #fff;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1px 0 0 #fff;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #fff;
+   }
